@@ -4,7 +4,7 @@ import time
 import threading
 from flask import Flask
 
-app = Flask(name)
+app = Flask(__name__)
 
 APP_SCRIPT = "app.py"
 CHECK_INTERVAL = 300  # 5 minutes
